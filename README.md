@@ -1,2 +1,4 @@
 sql
 ===
+
+generic sql strings
