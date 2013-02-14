@@ -1,0 +1,1 @@
+select (extract(year from current_date) || '-' || extract(month from current_date) || '-' || generate_series(1, (extract(day from date_trunc('month', current_date + '1 month'::interval) - '1 day'::interval)::integer)) )::date
